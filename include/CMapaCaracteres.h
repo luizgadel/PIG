@@ -269,7 +269,7 @@ public:
                 rectDestino.y = rectDestino.y - tamFonte;
                 continue;
             }
-            aux = aux % 256; // UTF16 string, retirando só o byte que interessa
+            aux = aux % 256; // UTF16 string, retirando sï¿½ o byte que interessa
 
             rectDestino.w = larguraLetra[aux - PRIMEIRO_CAR];
             rectDestino.h = alturaLetra[aux - PRIMEIRO_CAR];
