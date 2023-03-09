@@ -1,12 +1,12 @@
 
 /********************************
-A função CriaJogo() é responsável pela criação da janela do jogo e pelos componentes audio-visuais.
-Ela deve ser chamada antes de qualquer outra função da biblioetac PIG.h. Não é possível criar dois
-jogos no mesmo progama. Logo, somente a primeira chamada terá efeito.
-Parâmetros:
-nome_Janela (entrada, passagem por referência*): indica o nome que a janela do jogo mostrará no seu título.
-É utilizado o operador * apenas por se tratar de um parâmetro string. O valor do parâmetro não é alterado dentro da função.
-cursor_Proprio (entrada, passagem por valor): indica se o jogo utilizará cursores (ponteiros) próprios para o mouse ou utilizará o cursor padrão.
+A funï¿½ï¿½o CriaJogo() ï¿½ responsï¿½vel pela criaï¿½ï¿½o da janela do jogo e pelos componentes audio-visuais.
+Ela deve ser chamada antes de qualquer outra funï¿½ï¿½o da biblioetac PIG.h. Nï¿½o ï¿½ possï¿½vel criar dois
+jogos no mesmo progama. Logo, somente a primeira chamada terï¿½ efeito.
+Parï¿½metros:
+nome_Janela (entrada, passagem por referï¿½ncia*): indica o nome que a janela do jogo mostrarï¿½ no seu tï¿½tulo.
+ï¿½ utilizado o operador * apenas por se tratar de um parï¿½metro string. O valor do parï¿½metro nï¿½o ï¿½ alterado dentro da funï¿½ï¿½o.
+cursor_Proprio (entrada, passagem por valor): indica se o jogo utilizarï¿½ cursores (ponteiros) prï¿½prios para o mouse ou utilizarï¿½ o cursor padrï¿½o.
 ********************************/
 void PIG_criarJanela(char const *nome_Janela, int largura, int altura)
 {
@@ -26,8 +26,8 @@ void PIG_criarJanela(char const *nome_Janela, int largura, int altura)
 }
 
 /********************************
-A função FinalizaJogo() é responsável por encerrar com a PIG. Após tudo o jogo ser executado
-a função deve ser chamada e ela irá realizar a liberação de memória dos elementos criados pela PIG.
+A funï¿½ï¿½o FinalizaJogo() ï¿½ responsï¿½vel por encerrar com a PIG. Apï¿½s tudo o jogo ser executado
+a funï¿½ï¿½o deve ser chamada e ela irï¿½ realizar a liberaï¿½ï¿½o de memï¿½ria dos elementos criados pela PIG.
 ********************************/
 void PIG_finalizarJanela()
 {
@@ -45,11 +45,11 @@ void PIG_exibirCursor(int cursorExibido)
 }
 
 /********************************
-A função pegarEvento() indica se houve algum tipo de evento desde a última vez que a função foi chamada.
-Um evento pode ser uma tecla pressionada, um clique do mouse ou outra coisa relacionada à tela do jogo.
-Maiores informaçõe podem ser vistas no arquivo Tipo_PIG.h
+A funï¿½ï¿½o pegarEvento() indica se houve algum tipo de evento desde a ï¿½ltima vez que a funï¿½ï¿½o foi chamada.
+Um evento pode ser uma tecla pressionada, um clique do mouse ou outra coisa relacionada ï¿½ tela do jogo.
+Maiores informaï¿½ï¿½e podem ser vistas no arquivo Tipo_PIG.h
 Retorno:
-O valor de retorno é um struct contendo o tipo de evento ocorrido e vários outros structs com informações específicas.
+O valor de retorno ï¿½ um struct contendo o tipo de evento ocorrido e vï¿½rios outros structs com informaï¿½ï¿½es especï¿½ficas.
 ********************************/
 PIG_Evento PIG_pegarEvento()
 {
@@ -57,7 +57,7 @@ PIG_Evento PIG_pegarEvento()
 }
 
 /********************************
-A função PegarTecla reconhece o apertar ou soltar de uma tecla e retorna um codigo.
+A funï¿½ï¿½o PegarTecla reconhece o apertar ou soltar de uma tecla e retorna um codigo.
 
 Se o valor retornado for positivo isso significa que a tecla foi apertada
 Se o valor retornado for negativo isso significa que a tecla foi "soltada"
@@ -80,11 +80,11 @@ int PIG_pegarTecla()
 }
 
 /********************************
-A função PegarBotao reconhece qual botao do mouse foi clicado.
+A funï¿½ï¿½o PegarBotao reconhece qual botao do mouse foi clicado.
 
-0 = botão esquerdo
-1 = botão central (a rodinha)
-2 = botão direito
+0 = botï¿½o esquerdo
+1 = botï¿½o central (a rodinha)
+2 = botï¿½o direito
 
 Se o valor retornado for positivo isso significa que a tecla foi apertada
 Se o valor retornado for negativo isso significa que a tecla foi "soltada"
@@ -107,7 +107,7 @@ int PIG_pegarBotao()
 }
 
 /********************************
-A função atualizarJanela() é reponsável por detectar todos os eventos e atualizar as variaveis internas da biblioteca.
+A funï¿½ï¿½o atualizarJanela() ï¿½ reponsï¿½vel por detectar todos os eventos e atualizar as variaveis internas da biblioteca.
 ********************************/
 void PIG_atualizarJanela()
 {
@@ -117,8 +117,8 @@ void PIG_atualizarJanela()
 }
 
 /********************************
-A função IniciaDesenho() é responsável por preparar a janela do jogo para que os objetos gráficos
-possam ser mostrados, além de desenhar a imagem de fundo do jogo, caso tenha sido definida.
+A funï¿½ï¿½o IniciaDesenho() ï¿½ responsï¿½vel por preparar a janela do jogo para que os objetos grï¿½ficos
+possam ser mostrados, alï¿½m de desenhar a imagem de fundo do jogo, caso tenha sido definida.
 Deve ser chamada repetidamente a cada novo quadro (frame) a ser desenhado.
 ********************************/
 void PIG_iniciarDesenho()
@@ -127,7 +127,7 @@ void PIG_iniciarDesenho()
 }
 
 /********************************
-A função EncerraDesenho() é responsável por encerrar o desenho que foi criado, mostrando na tela do jogo.
+A funï¿½ï¿½o EncerraDesenho() ï¿½ responsï¿½vel por encerrar o desenho que foi criado, mostrando na tela do jogo.
 Deve ser chamado sempre ao final do loop principal do jogo.
 ********************************/
 void PIG_encerrarDesenho()
@@ -136,10 +136,10 @@ void PIG_encerrarDesenho()
 }
 
 /********************************
-A função getJogoRodando é reponsável por retornar se o jogo ainda está ativo ou não.
-O jogo será encerrado se a janela do jogo for fechada, por exemplo.
+A funï¿½ï¿½o getJogoRodando ï¿½ reponsï¿½vel por retornar se o jogo ainda estï¿½ ativo ou nï¿½o.
+O jogo serï¿½ encerrado se a janela do jogo for fechada, por exemplo.
 Retorno:
-inteiro que indica se o jogo ainda está sendo executado (valor diferente de zero) ou não (valor igual a 0, zero).
+inteiro que indica se o jogo ainda estï¿½ sendo executado (valor diferente de zero) ou nï¿½o (valor igual a 0, zero).
 ********************************/
 int PIG_jogoRodando()
 {
@@ -147,9 +147,9 @@ int PIG_jogoRodando()
 }
 
 /********************************
-A função Espera() "congela" a tela do jogo por alguns milisegundos, impedindo que qualquer outro comando seja executado enquanto isso.
-Parâmetros:
-tempo (entrada, passagem por valor): indica a quantidade de milisegundos durante a qual o jogo será pausado.
+A funï¿½ï¿½o Espera() "congela" a tela do jogo por alguns milisegundos, impedindo que qualquer outro comando seja executado enquanto isso.
+Parï¿½metros:
+tempo (entrada, passagem por valor): indica a quantidade de milisegundos durante a qual o jogo serï¿½ pausado.
 ********************************/
 void PIG_esperar(int tempo)
 {
@@ -157,12 +157,185 @@ void PIG_esperar(int tempo)
 }
 
 /********************************
-A função GetFPS() é responsável por calcular o valor do Frames Per Seconds (FPS), que representa a quantidade de
+A funï¿½ï¿½o GetFPS() ï¿½ responsï¿½vel por calcular o valor do Frames Per Seconds (FPS), que representa a quantidade de
 frames (quadros) desenhados por segundo pela PIG.
 Retorno:
-double que indica a média de quadros desenhados por segundo.
+double que indica a mï¿½dia de quadros desenhados por segundo.
 ********************************/
 double PIG_pegarFPS()
 {
     return jogo->GetFPS();
+}
+
+void DrawCircle(SDL_Renderer *renderer, int32_t centreX, int32_t centreY, int32_t radius)
+{
+    const int32_t diameter = (radius * 2);
+
+    int32_t x = (radius - 1);
+    int32_t y = 0;
+    int32_t tx = 1;
+    int32_t ty = 1;
+    int32_t error = (tx - diameter);
+
+    while (x >= y)
+    {
+        //  Each of the following renders an octant of the circle
+        SDL_RenderDrawPoint(renderer, centreX + x, centreY - y);
+        SDL_RenderDrawPoint(renderer, centreX + x, centreY + y);
+        SDL_RenderDrawPoint(renderer, centreX - x, centreY - y);
+        SDL_RenderDrawPoint(renderer, centreX - x, centreY + y);
+        SDL_RenderDrawPoint(renderer, centreX + y, centreY - x);
+        SDL_RenderDrawPoint(renderer, centreX + y, centreY + x);
+        SDL_RenderDrawPoint(renderer, centreX - y, centreY - x);
+        SDL_RenderDrawPoint(renderer, centreX - y, centreY + x);
+
+        if (error <= 0)
+        {
+            ++y;
+            error += ty;
+            ty += 2;
+        }
+
+        if (error > 0)
+        {
+            --x;
+            tx += 2;
+            error += (tx - diameter);
+        }
+    }
+}
+
+void draw_circle(SDL_Renderer *renderer, int x, int y, int radius, SDL_Color color)
+{
+
+    SDL_SetRenderDrawColor(jogo->renderer, BRANCO.r, BRANCO.r, BRANCO.r, 255);
+    DrawCircle(jogo->renderer, x, y, radius);
+
+    SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
+    radius -= 1;
+    for (int w = 0; w < radius * 2; w++)
+    {
+        for (int h = 0; h < radius * 2; h++)
+        {
+            int dx = radius - w; // horizontal offset
+            int dy = radius - h; // vertical offset
+            if ((dx * dx + dy * dy) <= (radius * radius))
+            {
+                SDL_RenderDrawPoint(renderer, x + dx, y + dy);
+            }
+        }
+    }
+}
+
+void PIG_desenhaCirculo(int32_t centreX, int32_t centreY, int32_t radius, SDL_Color color)
+{
+    draw_circle(jogo->renderer, centreX, centreY, radius, color);
+}
+
+int SDL_RenderDrawCircle(SDL_Renderer *renderer, int x, int y, int radius)
+{
+    int offsetx, offsety, d;
+    int status;
+
+    offsetx = 0;
+    offsety = radius;
+    d = radius - 1;
+    status = 0;
+
+    while (offsety >= offsetx)
+    {
+        status += SDL_RenderDrawPoint(renderer, x + offsetx, y + offsety);
+        status += SDL_RenderDrawPoint(renderer, x + offsety, y + offsetx);
+        status += SDL_RenderDrawPoint(renderer, x - offsetx, y + offsety);
+        status += SDL_RenderDrawPoint(renderer, x - offsety, y + offsetx);
+        status += SDL_RenderDrawPoint(renderer, x + offsetx, y - offsety);
+        status += SDL_RenderDrawPoint(renderer, x + offsety, y - offsetx);
+        status += SDL_RenderDrawPoint(renderer, x - offsetx, y - offsety);
+        status += SDL_RenderDrawPoint(renderer, x - offsety, y - offsetx);
+
+        if (status < 0)
+        {
+            status = -1;
+            break;
+        }
+
+        if (d >= 2 * offsetx)
+        {
+            d -= 2 * offsetx + 1;
+            offsetx += 1;
+        }
+        else if (d < 2 * (radius - offsety))
+        {
+            d += 2 * offsety - 1;
+            offsety -= 1;
+        }
+        else
+        {
+            d += 2 * (offsety - offsetx - 1);
+            offsety -= 1;
+            offsetx += 1;
+        }
+    }
+
+    return status;
+}
+
+int SDL_RenderFillCircle(SDL_Renderer *renderer, int x, int y, int radius, SDL_Color color)
+{
+    int offsetx, offsety, d;
+    int status;
+
+    SDL_SetRenderDrawColor(jogo->renderer, BRANCO.r, BRANCO.g, BRANCO.b, 255);
+    SDL_RenderDrawCircle(jogo->renderer, x, y, radius);
+
+    SDL_SetRenderDrawColor(jogo->renderer, color.r, color.g, color.b, color.a);
+    radius -= 1;
+
+    offsetx = 0;
+    offsety = radius;
+    d = radius - 1;
+    status = 0;
+
+    while (offsety >= offsetx)
+    {
+
+        status += SDL_RenderDrawLine(renderer, x - offsety, y + offsetx,
+                                     x + offsety, y + offsetx);
+        status += SDL_RenderDrawLine(renderer, x - offsetx, y + offsety,
+                                     x + offsetx, y + offsety);
+        status += SDL_RenderDrawLine(renderer, x - offsetx, y - offsety,
+                                     x + offsetx, y - offsety);
+        status += SDL_RenderDrawLine(renderer, x - offsety, y - offsetx,
+                                     x + offsety, y - offsetx);
+
+        if (status < 0)
+        {
+            status = -1;
+            break;
+        }
+
+        if (d >= 2 * offsetx)
+        {
+            d -= 2 * offsetx + 1;
+            offsetx += 1;
+        }
+        else if (d < 2 * (radius - offsety))
+        {
+            d += 2 * offsety - 1;
+            offsety -= 1;
+        }
+        else
+        {
+            d += 2 * (offsety - offsetx - 1);
+            offsety -= 1;
+            offsetx += 1;
+        }
+    }
+
+    return status;
+}
+
+void SDL_desenhaCirculo(int x, int y, int radius, SDL_Color color)
+{
+    SDL_RenderFillCircle(jogo->renderer, x, y - 2, radius, color);
 }
