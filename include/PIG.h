@@ -3,7 +3,7 @@
 #define INCLUDE_PIG
 
 /********************************
-Versão 0.5.1 da Biblioteca Pig.h
+Versï¿½o 0.5.1 da Biblioteca Pig.h
 ********************************/
 
 #include <stdio.h>
@@ -13,6 +13,7 @@ Versão 0.5.1 da Biblioteca Pig.h
 #include <time.h>
 
 /// -------
+#define SDL_MAIN_HANDLED
 #include "SDL.h"
 #include "SDL_ttf.h"
 #include "SDL_image.h"
@@ -30,7 +31,7 @@ Versão 0.5.1 da Biblioteca Pig.h
 #include "CJogo.h"
 
 /********************************
-/ Variáveis Globais
+/ Variï¿½veis Globais
 /********************************/
 
 #define DEGTORAD (0.01745329251994329576)
@@ -44,7 +45,7 @@ PIG_Mouse PIG_mouse;
 int PIG_tecla, PIG_botao;
 
 /********************************
-/ Funções
+/ Funï¿½ï¿½es
 /********************************/
 
 #include "PIG_Jogo.h"
