@@ -38,6 +38,7 @@ public:
         for (Uint16 j = PRIMEIRO_CAR; j < ULTIMO_CAR; j++)
         {
             surfaceTemp[j - PRIMEIRO_CAR] = TTF_RenderGlyph_Solid(font, (Uint16)j, corFonte);
+            // surfaceTemp[j - PRIMEIRO_CAR] = TTF_RenderUTF8_Blended(font, (const char *)j, corFonte);
             if (!surfaceTemp[j - PRIMEIRO_CAR])
             {
                 printf("Character nao encontrado %d\n", j - PRIMEIRO_CAR);
@@ -96,6 +97,7 @@ public:
             if (outline > 0)
             {
                 SDL_Surface *out = TTF_RenderGlyph_Solid(font, (Uint16)j, corOutline);
+                // SDL_Surface *out = TTF_RenderUTF8_Blended(font, (const char *)j, corOutline);
                 SDL_BlitSurface(out, NULL, surfaceTemp[j - PRIMEIRO_CAR], &dest);
                 SDL_FreeSurface(out);
             }
@@ -136,6 +138,7 @@ public:
         for (Uint16 j = PRIMEIRO_CAR; j < ULTIMO_CAR; j++)
         {
             surfaceTemp[j - PRIMEIRO_CAR] = TTF_RenderGlyph_Solid(font, (Uint16)j, PRETO);
+            // surfaceTemp[j - PRIMEIRO_CAR] = TTF_RenderUTF8_Blended(font, (const char *)j, PRETO);
             alturaLetra[j - PRIMEIRO_CAR] = surfaceTemp[j - PRIMEIRO_CAR]->h;
             if (surfaceTemp[j - PRIMEIRO_CAR]->h > altOffScreen)
                 altOffScreen = surfaceTemp[j - PRIMEIRO_CAR]->h;
@@ -206,6 +209,7 @@ public:
             if (outline > 0)
             {
                 SDL_Surface *out = TTF_RenderGlyph_Solid(font, (Uint16)j, corOutline);
+                // SDL_Surface *out = TTF_RenderUTF8_Blended(font, (const char *)j, corOutline);
                 SDL_BlitSurface(out, NULL, surfaceTemp[j - PRIMEIRO_CAR], &dest);
                 SDL_FreeSurface(out);
             }
